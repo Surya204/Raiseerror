@@ -17,7 +17,7 @@
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
 
-	<build>
+<build>
 		<plugins>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -25,17 +25,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
-			</plugin>
-		<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
-                <configuration>
-                    <compilerArgs>
-                        <args>-parameters</args>
-                    </compilerArgs>
-    			<cloudHubDeployment>
+				<cloudHubDeployment>
 				<username>satya999</username>
 				<environment>Sandbox</environment>
 				<workers>1</workers>
@@ -45,9 +35,9 @@
 				<muleVersion>4.2.2</muleVersion>
 				<objectStoreV2>true</objectStoreV2>
 				</cloudHubDeployment>
-                </configuration>
-            </plugin>
-        </plugins>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 	<dependencies>
